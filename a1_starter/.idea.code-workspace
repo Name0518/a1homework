@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".idea"
+		},
+		{
+			"path": "__pycache__"
+		},
+		{
+			"path": "pyta"
+		}
+	],
+	"settings": {}
+}
