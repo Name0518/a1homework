@@ -60,12 +60,14 @@ class CheckTest(unittest.TestCase):
     def test_update_budget(self) -> None:
         """Function update_budget."""
 
-        self._check(df.update_budget, [100, "MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
+        self._check(df.update_budget, [
+                    100, "MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
 
     def test_can_select(self) -> None:
         """Function can_select."""
 
-        self._check(df.can_select, ["MGO_PD_G0-_A14_DC43_H70_Pr5-", 3, 1, 1], bool)
+        self._check(df.can_select, [
+                    "MGO_PD_G0-_A14_DC43_H70_Pr5-", 3, 1, 1], bool)
 
     def test_add_to_team(self) -> None:
         """Function add_to_team."""
@@ -80,22 +82,26 @@ class CheckTest(unittest.TestCase):
     def test_compute_dc_points(self) -> None:
         """Function compute_dc_points."""
 
-        self._check(df.compute_dc_points, ["MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
+        self._check(df.compute_dc_points, [
+                    "MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
 
     def test_compute_goal_points(self) -> None:
         """Function compute_goal_points."""
 
-        self._check(df.compute_goal_points, ["MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
+        self._check(df.compute_goal_points, [
+                    "MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
 
     def test_compute_assist_points(self) -> None:
         """Function compute_assist_points."""
 
-        self._check(df.compute_assist_points, ["MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
+        self._check(df.compute_assist_points, [
+                    "MGO_PD_G0-_A14_DC43_H70_Pr5-"], int)
 
     def test_compute_hit_points(self) -> None:
         """Function compute_hit_points."""
 
-        self._check(df.compute_hit_points, ["MGO_PD_G0-_A14_DC43_H70_Pr5-"], float)
+        self._check(df.compute_hit_points, [
+                    "MGO_PD_G0-_A14_DC43_H70_Pr5-"], float)
 
     def test_compute_fantasy_score(self) -> None:
         """Function compute_fantasy_score."""
@@ -103,7 +109,6 @@ class CheckTest(unittest.TestCase):
         self._check(
             df.compute_fantasy_score, ["MGO_PD_G0-_A14_DC43_H70_Pr5-"], float
         )
-
 
     def test_check_constants(self) -> None:
         """Values of constants."""
